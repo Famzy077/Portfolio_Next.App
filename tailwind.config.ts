@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'small': '320px',  // Custom small screen breakpoint
+        'medium': '501px', // Custom medium screen breakpoint
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

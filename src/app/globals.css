@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows&family=Jacquarda+Bastarda+9&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,3 +20,82 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.akin{
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nameh1{
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nameBox{
+  margin: 13px 0;
+}
+
+.section2{
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.section2 .text {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.aboutText{
+  /* font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+
+}
+/* Small screens: 300px - 500px */
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  header {
+    padding: 0 !important;
+    margin: 0 10px !important;
+    margin-bottom: 4rem !important;
+  }
+  .logo_box{
+    font-size: 1rem;
+  }
+  
+  .section1 .nameh1{
+    font-size: 2rem;
+  }
+  .nameBox{
+    margin: 20px;
+    padding: 5px;
+  }
+  /* .section1 .skillIcon{ */
+    /* display: none; */
+  /* } */
+  button{
+    cursor: pointer;
+  }
+  .imageBox{
+    padding: 0;
+  }
+  .imageBox Image{
+    border: 2 solid lime !important;
+    /* width: 700px !important; */
+  }
+}
+
+@media (width >= 40rem) { 
+  
+ }
+
+/* Medium screens: 500px - 780px */
+/* @media only screen and (min-width: 501px) and (max-width: 780px) {
+  body {
+    background-color: lightgreen;
+  }
+} */
