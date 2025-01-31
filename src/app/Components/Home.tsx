@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import ProfileImage from './Images/profile.png'
 import Image from 'next/image';
 import NextJsimg from './Images/NextJs.png'
-import { faPlane, faHeadphones, faDollar, faComputer } from '@fortawesome/free-solid-svg-icons';
+import { faPlane, faHeadphones, faDollar, faComputer, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import Tailwindimg from './Images/tailwind.png'
 import Reactimg from './Images/React.png'
 import Nodeimg from './Images/NodeJs.png'
@@ -15,6 +15,7 @@ import Pythonimg from './Images/Python.png'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Link from 'next/link';
+import HealthCare from './Images/healthcare.png'
 const Home = () => {
     const [readMore, setReadMove] = useState(false)
     const handleReadMore = () => {
@@ -161,19 +162,63 @@ const Home = () => {
                 <button className='border-2 bg-blue-100 font-semi border-blue-800 text-2xl md:text-4xl font-semibold text-blue-800 px-3 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Frontend</button>
                 <button className='border-2 bg-blue-100 font-semi border-blue-800 text-2xl md:text-4xl font-semibold text-blue-800 cursor-pointer px-3 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Backend</button>
             </main>
-            <div>
-                <div>
-                    {/* <Image src={'./'} alt='project-image'/> */}
+            <div className='project m-10 gap-5'>
+                <div className='p-5 bg-blue-950 rounded-3xl'>
+                    <div className='mt-10 mb-2'>
+                        <Image className='rounded-2xl' src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare: Health Care Website</h1>
+                        <p>Project Category</p>
+                        <h2><FontAwesomeIcon icon={faBriefcase} />React</h2>
+                        <h2><FontAwesomeIcon icon={faBriefcase} />Frontend</h2>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
                 </div>
                 <div>
-                    <h1>HealthCare</h1>
-                    <p><Link href='#'>GitHub</Link></p>
+                    <div>
+                        <Image src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare</h1>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
                 </div>
                 <div>
-                    <div></div>
+                    <div>
+                        <Image src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare</h1>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
                 </div>
                 <div>
-                    <div></div>
+                    <div>
+                        <Image src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare</h1>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <Image src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare</h1>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <Image src={HealthCare} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1>HealthCare</h1>
+                        <p><Link href='#'>GitHub</Link></p>
+                    </div>
                 </div>
             </div>
         </section>
