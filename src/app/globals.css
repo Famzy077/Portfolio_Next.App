@@ -2,7 +2,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  scrollbar-width: thin;
+  scrollbar-color:  rgb(6, 6, 102) #f1f1f1;
+  
+}
+html {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+body{
+  background-color: black;
+  margin: 0;
+}
+nav ul li{
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: normal;
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
 
+/* Style the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,11 +54,6 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 .akin{
   font-family: "Lobster", serif;
   font-weight: 400;
@@ -54,10 +88,54 @@ body {
 }
 .project{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px !important;
 }
+:Link{
+  cursor: pointer;
+}
+
 /* Small screens: 300px - 500px */
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+  header {
+    padding: 0 !important;
+    margin: 3em 1.4rem !important;
+    margin-bottom: 4rem !important;
+  }
+  .logo_box{
+    font-size: 1rem;
+  }
+  
+  .section1 .nameh1{
+    font-size: 2rem;
+  }
+  
+  .nameBox{
+    margin: 2rem 1.5rem !important;
+    padding: 5px;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  .imageBox{
+    padding: 0;
+  }
+  .project{
+    gap: 3rem !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .exprience{
+    gap: 30px;
+  }
+  footer{
+    margin-right: 1.3rem !important;
+    margin-left: 1.3rem !important;
+    padding: 5px !important;
+  }
+}
+
+/* Medium screens: 500px - 780px */
+@media only screen and (min-width: 501px) and (max-width: 780px) {
   header {
     padding: 0 !important;
     margin: 0 10px !important;
@@ -71,35 +149,29 @@ body {
     font-size: 2rem;
   }
   .nameBox{
-    margin: 20px;
+    margin: 2rem 4rem !important;
     padding: 5px;
   }
-  /* .section1 .skillIcon{ */
-    /* display: none; */
-  /* } */
-  button{
-    cursor: pointer;
+}
+@media only screen and (min-width: 781px) and (max-width: 1080px) {
+  header {
+    padding: 0 !important;
+    margin: 2rem 8rem !important;
+    margin-bottom: 4rem !important;
   }
-  .imageBox{
-    padding: 0;
+  .logo_box{
+    font-size: 1rem;
   }
-  .imageBox Image{
-    border: 2 solid lime !important;
-    /* width: 700px !important; */
+  
+  .section1 .nameh1{
+    font-size: 2rem;
   }
-  .project{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  .nameBox{
+    margin: 2rem 10rem !important;
+    padding: 15px;
+  }
+  footer{
+    margin-right: 4rem !important;
+    margin-left: 4rem !important;
   }
 }
-
-@media (width >= 40rem) { 
-  
- }
-
-/* Medium screens: 500px - 780px */
-/* @media only screen and (min-width: 501px) and (max-width: 780px) {
-  body {
-    background-color: lightgreen;
-  }
-} */
